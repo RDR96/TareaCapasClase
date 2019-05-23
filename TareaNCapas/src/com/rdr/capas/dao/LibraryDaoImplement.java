@@ -67,19 +67,9 @@ public class LibraryDaoImplement implements LibraryDAO{
 		// TODO Auto-generated method stub
 		StringBuffer sb = new StringBuffer();		
 		
-		if(columnName.equals("titulo")) {
-			sb.append("SELECT * FROM public.book WHERE titulo ~* :value");
-		}
-		else if(columnName.equals("autor")) {
-			sb.append("SELECT * FROM public.book WHERE autor ~* :value");
-		}
-		else if(columnName.equals("genero")) {
-			sb.append("SELECT * FROM public.book WHERE genero ~* :value");
-		}
-		else {
-			sb.append("SELECT * FROM public.book WHERE isbn ~* :value");
-		}
-			
+		sb.append("SELECT * FROM public.book WHERE " + columnName + " ~* :value");
+				
+		
 		
 		Query query = entityManager.createNativeQuery(sb.toString(), Book.class);
 		query.setParameter("value", value);

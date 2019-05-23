@@ -73,7 +73,7 @@
 		
 		button {
 			position: fixed;
-			margin-top: 100px;
+			margin-top: 150px;
 		}
 	</style>
 	
@@ -102,7 +102,7 @@
 			
 		</div>
 		
-		<div class="col-md-8 form-container" style="padding-top:100px;">
+		<div class="col-md-8 form-container" style="padding-top:150px;">
 		<p>${numero}</p>
 			<table class="table table-bordered">
 				<thead>

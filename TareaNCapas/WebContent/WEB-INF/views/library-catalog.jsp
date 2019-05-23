@@ -73,7 +73,7 @@
 		
 		button {
 			position: fixed;
-			margin-top: 100px;
+			margin-top: 150px;
 		}
 	</style>
 	
@@ -90,7 +90,7 @@
 			<div class="col-md-6 library-name-section">
 				<span style="font-size: 20px;">
 					
-					Hay ${booksNumber} libros en existencia, de ${distinctNumberOfAuthors} cantidad de autores diferentes 
+					Hay ${booksNumber} libros en existencia, de ${distinctNumberOfAuthors} autores diferentes 
 				
 				</span>	
 			</div>
@@ -102,7 +102,7 @@
 			
 		</div>
 		
-		<div class="col-md-8 form-container" style="padding-top:100px;">
+		<div class="col-md-8 form-container" style="padding-top:150px;">
 		<p>${numero}</p>
 			<table class="table table-bordered">
 				<thead>
